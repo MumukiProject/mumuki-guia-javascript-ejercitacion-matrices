@@ -3,7 +3,11 @@ name: Ejercitación Matrices
 locale: es
 type: practice
 beta: false
+teacher_info: ''
 language: javascript
 id_format: "%05d"
-order: []
+order:
+- 1
+- 2
+- 3
 private: false
