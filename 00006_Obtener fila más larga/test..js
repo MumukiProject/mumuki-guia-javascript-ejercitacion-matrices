@@ -1,9 +1,9 @@
-it("Si hacemos sumar(2, 3) debería retornar 5", function() {
-  let resultado = sumar(2,3)
-  assert.equal(resultado, 5,`La suma debería retornar 5 pero fue ${resultado}`);
+it("Si hacemos obtenerFilaMasLarga([[1, 4], [3, 7, 5], [1]]) debería retornar [3, 7, 5]", function() {
+  let resultado = obtenerFilaMasLarga([[1, 4], [3, 7, 5], [1]])
+  assert.equal(resultado, [3, 7, 5],`obtenerFilaMasLarga debería retornar [3, 7, 5] pero fue ${resultado}`);
 })
 
-it("Si hacemos sumar(2, 3) debería retornar 5", function() {
-  let resultado = sumar(2,3)
-  assert.equal(resultado, 5,`La suma debería retornar 5 pero fue ${resultado}`);
+it("Si hacemos obtenerFilaMasLarga([[1], [3, 7], [6, 8]]) debería retornar [3, 7]", function(){
+  let resultado = obtenerFilaMasLarga([[1], [3, 7], [6, 8]])
+  assert.equal(resultado, [3, 7],`obtenerFilaMasLarga debería retornar [3, 7] pero fue ${resultado}`);
 })
