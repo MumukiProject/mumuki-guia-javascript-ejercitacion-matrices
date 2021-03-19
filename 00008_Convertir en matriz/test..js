@@ -1,5 +1,5 @@
 it("Si hacemos convertirEnMatriz(2, [1, 2, 3, 4]) debería retornar [[1, 2], [3, 4]]", function() {
-  let resultado = convertirEnMatriz(2, [1, 2, 3, 4]))
+  let resultado = convertirEnMatriz(2, [1, 2, 3, 4])
   assert.equal(resultado, [[1, 2], [3, 4]],`convertirEnMatriz debería retornar [[1, 2], [3, 4]] pero fue ${resultado}`);
 })
 
