@@ -1,4 +1,39 @@
-it("Si hacemos sumar(2, 3) debería retornar 5", function() {
-  let resultado = sumar(2,3)
-  assert.equal(resultado, 5,`La suma debería retornar 5 pero fue ${resultado}`);
+it("Si hacemos generarMatrizEscalonada(3) debería retornar  [
+    [0], 
+    [0, 0], 
+    [0, 0, 0]
+  ] ", function() {
+  let resultado = generarMatrizEscalonada(3)
+  assert.equal(resultado,  [
+    [0], 
+    [0, 0], 
+    [0, 0, 0]
+  ] ,`generarMatrizEscalonada debería retornar  [
+    [0], 
+    [0, 0], 
+    [0, 0, 0]
+  ]  pero fue ${resultado}`);
+})
+
+it("Si hacemos generarMatrizEscalonada(5) debería retornar [
+    [0], 
+    [0, 0], 
+    [0, 0, 0], 
+    [0, 0, 0, 0], 
+    [0, 0, 0, 0, 0]
+  ] ", function() {
+  let resultado = generarMatrizEscalonada(5)  
+  assert.equal(resultado, [
+    [0], 
+    [0, 0], 
+    [0, 0, 0], 
+    [0, 0, 0, 0], 
+    [0, 0, 0, 0, 0]
+  ] ,`generarMatrizEscalonada debería retornar [
+    [0], 
+    [0, 0], 
+    [0, 0, 0], 
+    [0, 0, 0, 0], 
+    [0, 0, 0, 0, 0]
+  ]  pero fue ${resultado}`);
 })

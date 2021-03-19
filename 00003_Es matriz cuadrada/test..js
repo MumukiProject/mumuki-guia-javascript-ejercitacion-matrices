@@ -5,5 +5,5 @@ it("Si hacemos esMatrizCuadrada([[4, 5],[2, 7, 1],[8, 10],]) debería retornar f
 
 it("Si hacemos esMatrizCuadrada([[4, 5, 9],[2, 7, 1],[8, 10, 5],]) debería retornar true", function(){
   let resultado = esMatrizCuadrada([[4, 5, 9],[2, 7, 1],[8, 10, 5],]) 
-  assert.equal(resultado, true,`La suma debería retornar 5 pero fue ${resultado}`);
+  assert.equal(resultado, true,`esMatrizCuadrada debería retornar 5 pero fue ${resultado}`);
 })
