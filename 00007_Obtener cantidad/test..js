@@ -1,9 +1,9 @@
-it("Si hacemos obtenerCantidad('🍎', [
+it(`Si hacemos obtenerCantidad('🍎', [
   ['🍎', '🍏', '🍌', '🍌'],
   ['🍌', '🍎'],
   ['🍎', '🍏', '🍌'],
   ['🍏', '🍌', '🍎', '🍌'],
-]) debería retornar 5", function() {
+]) debería retornar 5`, function() {
   let resultado = obtenerCantidad('🍎', [
   ['🍎', '🍏', '🍌', '🍌'],
   ['🍌', '🍎'],
