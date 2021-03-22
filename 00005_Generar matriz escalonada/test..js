@@ -1,8 +1,8 @@
-it("Si hacemos generarMatrizEscalonada(3) debería retornar  [
+it(`Si hacemos generarMatrizEscalonada(3) debería retornar  [
     [0], 
     [0, 0], 
     [0, 0, 0]
-  ] ", function() {
+  ] `, function() {
   let resultado = generarMatrizEscalonada(3)
   assert.equal(resultado,  [
     [0], 
@@ -15,13 +15,13 @@ it("Si hacemos generarMatrizEscalonada(3) debería retornar  [
   ]  pero fue ${resultado}`);
 })
 
-it("Si hacemos generarMatrizEscalonada(5) debería retornar [
+it(`Si hacemos generarMatrizEscalonada(5) debería retornar [
     [0], 
     [0, 0], 
     [0, 0, 0], 
     [0, 0, 0, 0], 
     [0, 0, 0, 0, 0]
-  ] ", function() {
+  ] `, function() {
   let resultado = generarMatrizEscalonada(5)  
   assert.equal(resultado, [
     [0], 
