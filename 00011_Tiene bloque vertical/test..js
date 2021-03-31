@@ -23,3 +23,23 @@ it(`Si hacemos tieneBloqueVertical([
 ]) 
   assert.equal(resultado, false,`tieneBloqueVertical debería retornar false pero fue ${resultado}`);
 })
+
+
+it(`Si hacemos tieneBloqueVertical([
+  [3, 4],
+  [9, 4],
+  [4, 5],
+  [1, 5],
+  [1, 4],
+  [4, 5],
+])  debería retornar false`, function() {
+  let resultado = tieneBloqueVertical([
+  [3, 4],
+  [9, 4],
+  [4, 5],
+  [1, 5],
+  [1, 4],
+  [4, 5],
+]) 
+  assert.equal(resultado, false,`tieneBloqueVertical debería retornar false pero fue ${resultado}`);
+})
