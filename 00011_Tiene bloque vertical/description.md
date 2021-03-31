@@ -1,4 +1,4 @@
-> Definí una función `tieneBloqueVertical` que tome una matriz y devuelva si la misma tiene un bloque _vertical_ de 3 o más ítems consecutivos idénticos.
+> Definí una función `tieneBloqueVertical` que tome una matriz y devuelva si la misma tiene un bloque _vertical_ :arrow_down: de 3 o más ítems consecutivos idénticos .
 >
 ```javascript
 ム tieneBloqueVertical([
