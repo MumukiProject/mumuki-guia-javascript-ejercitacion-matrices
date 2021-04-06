@@ -1,4 +1,4 @@
-> Definí una función `tieneBloqueHorizontal` que reciba como argumento un array 2d `matriz` y devuelva `true` si dicha `matriz` tiene un bloque _horizontal_ de 3 o más ítems consecutivos idénticos, o `false` si no tiene.
+> Definí una función `tieneBloqueHorizontal` que reciba como argumento un array 2d `matriz` y devuelva si dicha `matriz` tiene un bloque _horizontal_ de 3 o más ítems consecutivos idénticos.
 >
 ```javascript
 ム tieneBloqueHorizontal([
