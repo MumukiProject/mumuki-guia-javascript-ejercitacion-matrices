@@ -1,21 +1,21 @@
 it(`Si hacemos generarGrilla(2, 3, [1, 2]) debería retornar una matriz con 2 filas`, function(){
   let resultado = generarGrilla(2, 3, [1, 2])
-  assert.equal(resultado.length, 2),`generarGrilla debería retornar una matriz con 2 filas pero fue ${resultado.length}`);
+  assert.equal(resultado.length, 2,`generarGrilla debería retornar una matriz con 2 filas pero fue ${resultado.length}`);
 })
 
 it(`Si hacemos generarGrilla(2, 3, [1, 2]) debería retornar una matriz con 3 columnas`, function(){
   let resultado = generarGrilla(2, 3, [1, 2])
-  assert.equal(resultado[0].length,3),`generarGrilla debería retornar una matriz con 3 columnas pero fue ${resultado[0].length}`);
+  assert.equal(resultado[0].length,3,`generarGrilla debería retornar una matriz con 3 columnas pero fue ${resultado[0].length}`);
 })
 
 it(`Si hacemos generarGrilla(6, 5, [2, 4, 8]) debería retornar una matriz con 6 filas`, function(){
   let resultado = generarGrilla(6, 5, [2, 4, 8])
-  assert.equal(resultado.length, 6),`generarGrilla debería retornar una matriz con 6 filas pero fue ${resultado.length}`);
+  assert.equal(resultado.length, 6,`generarGrilla debería retornar una matriz con 6 filas pero fue ${resultado.length}`);
 })
 
 it(`Si hacemos generarGrilla(6, 5, [2, 4, 8]) debería retornar una matriz con 5 columnas`, function(){
   let resultado = generarGrilla(6, 5, [2, 4, 8])
-  assert.equal(resultado[0].length,5),`generarGrilla debería retornar una matriz con 5 columnas pero fue ${resultado[0].length}`);
+  assert.equal(resultado[0].length,5,`generarGrilla debería retornar una matriz con 5 columnas pero fue ${resultado[0].length}`);
 })
 
 it(`Si hacemos generarGrilla(8, 7, [2, 5, 7]) 2 veces seguidas debería retornas matrices distintas`, function(){
