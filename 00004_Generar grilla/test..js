@@ -19,8 +19,8 @@ it(`Si hacemos generarGrilla(6, 5, [2, 4, 8]) debería retornar una matriz con 5
 })
 
 it(`Si hacemos generarGrilla(8, 7, [2, 5, 7]) 2 veces seguidas debería retornas matrices distintas`, function(){
-  let resultado1 = generarGrillagenerarGrilla(8, 7, [2, 5, 7]);
-  let resultado2 = generarGrillagenerarGrilla(8, 7, [2, 5, 7]);
+  let resultado1 = generarGrilla(8, 7, [2, 5, 7]);
+  let resultado2 = generarGrilla(8, 7, [2, 5, 7]);
   assert.notDeepEqual(resultado1, resultado2);
 })
 
