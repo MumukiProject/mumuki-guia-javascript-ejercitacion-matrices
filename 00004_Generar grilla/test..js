@@ -25,16 +25,16 @@ it(`Si hacemos generarGrilla(8, 7, [2, 5, 7]) 2 veces seguidas debería retornas
 })
 
 it(`Si hacemos generarGrilla(2, 3, [1, 2]) debería retornar una matriz con elementos de [1, 2]`, function(){
-  let resultado = generarGrilla(2, 3, [1, 2])
-  assert(pertenecenA(resultado, [1,2]), "Se encontraron elementos en la matriz que no pertenecen al array items") ;
+  let resultado = generarGrilla(2, 3, [1, 2]);
+  assert(pertenecenA(resultado, [1,2]), "Se encontraron elementos en la matriz que no pertenecen al array items");
 })
 
-function pertenecenA(matriz, array) {
+function pertenecenA(matriz, lista) {
   let filas = matriz.length;
   let columnas = matriz[0].length;
   for(let fila = 0; fila < filas; fila++){
-    for(let columna = 0; columna < columnas; columnas){
-      if(array.includes(matriz[fila][columna])) {
+    for(let columna = 0; columna < columnas; columna++){
+      if(!lista.includes(matriz[fila][columna])) {
         return false;
       }
     }
