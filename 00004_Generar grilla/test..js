@@ -24,34 +24,20 @@ it(`Si hacemos generarGrilla(8, 7, [2, 5, 7]) 2 veces seguidas debería retornas
   assert.notDeepEqual(resultado1, resultado2);
 })
 
-/*
-it(`Si hacemos generarGrilla(2, 3, [1, 2]) debería retornar [
-    [1, 1, 2], 
-    [2, 1, 1]
-  ]`, function(){
+it(`Si hacemos generarGrilla(2, 3, [1, 2]) debería retornar una matriz con elementos de [1, 2]`, function(){
   let resultado = generarGrilla(2, 3, [1, 2])
-  assert.equal(resultado, [
-    [1, 1, 2], 
-    [2, 1, 1]
-  ],`generarGrilla debería retornar [
-    [1, 1, 2], 
-    [2, 1, 1]
-  ] pero fue ${resultado}`);
+  assert(pertenecenA(resultado, [1,2], "Se encontraron elementos en la matriz que no pertenecen al array items");
 })
 
-it(`Si hacemos generarGrilla(3, 3, ['a', 'b', 'c']) debería retornar [
-    ['c', 'c', 'a'], 
-    ['c', 'a', 'a'], 
-    ['b', 'a', 'b']
-  ]`, function(){
-  let resultado = generarGrilla(3, 3, ['a', 'b', 'c'])
-  assert.equal(resultado, [
-    ['c', 'c', 'a'], 
-    ['c', 'a', 'a'], 
-    ['b', 'a', 'b']
-  ],`generarGrilla debería retornar [
-    ['c', 'c', 'a'], 
-    ['c', 'a', 'a'], 
-    ['b', 'a', 'b']
-  ] pero fue ${resultado}`);
-})*/
+function pertenecenA(matriz, array) {
+  let filas = matriz.length;
+  let columnas = matriz[0].length;
+  for(let fila = 0; fila < filas; fila++){
+    for(let columna = 0; columna < columnas; columnas){
+      if(array.includes(matriz[fila][columna])) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
